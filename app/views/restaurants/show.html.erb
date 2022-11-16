@@ -1,0 +1,13 @@
+<div class= "container-md">
+  <h3><%= @restaurant.name %></h3>
+</div>
+
+<div>
+  <p><strong>Reviews</strong></p>
+  <%@restaurant.reviews.each do |review| %>
+    <p>
+      <%= review.content%>
+      <%=review.rating%>
+    </p>
+  <% end %>
+</div>
